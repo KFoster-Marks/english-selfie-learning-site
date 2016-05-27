@@ -17,3 +17,6 @@ Once a user has selected a module to study, the user is directed to a page that 
 For any communicative task module, users can elect to take a vocabulary quiz. This quiz randomly selects vocabulary from that highlighted on the corresponding module page, and using the Yandex Translation API, asks users to correctly choose a translation of one of these vocabulary words. Upon completion of the quiz, users are given feedback on their score and suggestions for future study.
 
 ![quiz](quiz.png)
+
+<a href="https://youtu.be/gOnikDk8tKI" target="_blank"><img src="landing-screenshot.png"
+alt="youtube video" width="240" height="180" border="10" /></a>
