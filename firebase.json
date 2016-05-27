@@ -1,9 +1,0 @@
-{
-  "firebase": "english-selfies",
-  "public": ".",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}

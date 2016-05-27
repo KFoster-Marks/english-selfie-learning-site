@@ -4,7 +4,7 @@
 var vocabulary = {
   beginner: {
     jobs: {
-      noun: ['instructional designer', 'faculty', 'objectives', 'curriculum', 'process', 'materials', 'cleanup', 'code', 'e-learning', 'distance education', 'university', 'semester', 'office', 'activities', 'sessions', 'squirrel', 'paw', 'treats', 'horse', 'trainer', 'ranch', 'manager', 'duties', 'stalls', 'livestock', 'clients', 'husband', 'goats', 'chickens', 'daughter'],
+      noun: ['instructional designer', 'faculty', 'objectives', 'curriculum', 'process', 'materials', 'cleanup', 'code', 'e-learning', 'distance education', 'university', 'semester', 'office', 'activities', 'sessions', 'squirrel', 'paw', 'treats', 'horse', 'trainer', 'ranch', 'manager', 'duties', 'stalls', 'livestock', 'clients', 'husband', 'goats', 'chickens'],
       verb: ['building', 'develop', 'assess', 'shooting', 'editing', 'producing', 'teach', 'enjoy', 'meeting', 'find', 'grade', 'planning', 'exploring', 'napping', 'nap', 'bit'],
       adjective: ['online', 'audio', 'engaging', 'effective', 'American', 'group', 'international', 'full-time'],
       adverb: [],
