@@ -21,4 +21,4 @@ For any communicative task module, users can elect to take a vocabulary quiz. Th
 <a href="https://youtu.be/gOnikDk8tKI" target="_blank"><img src="landing-screenshot.png"
 alt="youtube video" width="240" height="180" border="10" /></a>
 
-[![youtube video](landing-screenshot.png)](https://youtu.be/gOnikDk8tKI)
+[![youtube video](youtube.png)](https://youtu.be/gOnikDk8tKI)
