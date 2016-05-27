@@ -4,7 +4,7 @@ The [English Selfies](http://kfoster-marks.github.io/english-selfie-learning-sit
 
 Upon entering the site, an ELL user is asked to input his or her native language, which is used throughout the site to perform translations using the [Yandex Translate API](https://translate.yandex.com/developers) from English to the user's native language. The user is then prompted to identify as a beginner, intermediate or advanced learner in order to direct him/her to the appropriate proficiency page.
 
-![screenshot](landing-screenshot.jpg)
+![screenshot](landing-screenshot.png)
 
 On the selected proficiency page, the user can access modules organized by communicative task (i.e., discussing one's job).
 
