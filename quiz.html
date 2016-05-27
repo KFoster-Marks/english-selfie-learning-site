@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>English Selfies</title>
+    <script src="scripts/vocabulary_object.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://use.fontawesome.com/90d02c1055.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+<!-- Begin Navigation Bar -->
+      <div id="navigation-bar" class="row">
+        <div class="col-sm-1 col-xs-0"></div>
+        <div class="col-sm-5 col-xs-12">
+          <h1 id="site-logo"><a href="index.html"><span class="indie-font">English</span><span class="ubuntu-font"> <span id="divider-line">|</span> SELFIES</span></a></h1>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <form class="pull-right">
+            <button id="users-native-lang-choice" type='button' class="btn btn-warning">Lang: </button>
+            <button type="button" class="btn btn-warning level-button"><a href="beginner.html">Beginner</a></button>
+            <button type="button" class="btn btn-warning level-button"><a href="intermediate.html">Intermediate</a></button>
+            <button type="button" class="btn btn-warning level-button"><a href="advanced.html">Advanced</a></button>
+          <form>
+        </div>
+      </div>
+<!-- End Navigation Bar -->
+
+<!-- Back to module button -->
+      <div class="row" id="back-button-block">
+        <div class="col-sm-5">
+          <a href="modules/jobs.html">
+            <i class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+            <p id="back-button">Back to Module</p>
+          </a>
+        </div>
+      </div>
+<!-- End back to module button -->
+
+<!-- Begin Main Content Bar -->
+      <div id="main-content" class="row">
+        <div class="row">
+          <div class="col-sm-12 text-center" id="good-luck-text">
+            <h1 class="secondary-title"><span class="ubuntu-font">Good luck!</span></h1>
+          </div>
+        </div>
+
+<!-- tells user what they should study  -->
+        <div class="row" id="what-to-study-row">
+          <div class="col-sm-12 text-center">
+            <h1 class="secondary-title"><span class="ubuntu-font" id="what-to-study-text">placeholder...</span></h1>
+          </div>
+        </div>
+<!-- end user should study -->
+        <div class="row" id="begin-quiz">
+          <div class="col-sm-12 text-center">
+            <button type="button"  class="btn btn-warning">Begin Quiz</button>
+          </div>
+        </div>
+
+<!-- vocabulary appears after clicking button above -->
+      <div id="quiz-item-block">
+        <div class="row">
+          <div class="col-sm-3 col-xs-0"></div>
+          <div class="col-sm-6 col-xs-12 text-center">
+            <h2 id="native-language-vocab" class="secondary-title"><span class="ubuntu-font">native language vocab</span></h2>
+          </div>
+        </div>
+        <div class="row text-center" id="target-language-vocab">
+          <div class="col-sm-3 col-xs-12 text-center">
+            <h2 class="target-language-vocab"><span class="ubuntu-font quiz-response-hover">target language vocab 1</span></h2>
+          </div>
+          <div class="col-sm-3 col-xs-12 text-center">
+            <h2 class="target-language-vocab"><span class="ubuntu-font quiz-response-hover">target language vocab 2</span></h2>
+          </div>
+          <div class="col-sm-3 col-xs-12 text-center">
+            <h2 class="target-language-vocab"><span class="ubuntu-font quiz-response-hover">target language vocab 3</span></h2>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <button type="button" id="next-question" class="btn btn-warning">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/quizzes/jobs_quiz.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

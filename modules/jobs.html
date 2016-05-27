@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>English Selfies</title>
+    <!-- Latest compiled and minified JavaScript -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="../scripts/vocabulary_object.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <script src="https://use.fontawesome.com/90d02c1055.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+<!-- Begin Navigation Bar -->
+      <div id="navigation-bar" class="row">
+        <div class="col-sm-1 col-xs-0"></div>
+        <div class="col-sm-5 col-xs-12">
+          <h1 id="site-logo"><a href="../index.html"><span class="indie-font">English</span><span class="ubuntu-font"> <span id="divider-line">|</span> SELFIES</span></a></h1>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <form class="pull-right">
+            <button id="users-native-lang-choice" type='button' class="btn btn-warning">Lang: </button>
+            <button type="button" class="btn btn-warning level-button"><a href="../beginner.html">Beginner</a></button>
+            <button type="button" class="btn btn-warning level-button"><a href="../intermediate.html">Intermediate</a></button>
+            <button type="button" class="btn btn-warning level-button"><a href="../advanced.html">Advanced</a></button>
+          <form>
+        </div>
+      </div>
+<!-- End Navigation Bar -->
+      <div id="main-content" class="row">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="secondary-title"><span class="ubuntu-font">What Do You Do?</span></h1>
+          </div>
+        </div>
+
+<!-- Begin proficiency level buttons -->
+        <div class="row" id="vocab-grammar-buttons">
+          <div class="col-sm-12 text-center">
+            <button type="button" class="btn btn-warning" id="vocab-grammar-button">Show Vocabulary &amp; Grammar</button>
+          </div>
+        </div>
+        <hr>
+<!-- End proficiency level buttons -->
+<!-- Begin vocab/grammar tables level buttons -->
+        <div class="row" id="vocab-grammar-div">
+          <div class="col-sm-1"></div>
+          <!-- vocabulary column -->
+          <div class="col-sm-4">
+            <table class="table table-hover" id="vocab-table">
+              <h3>Vocabulary</h3>
+              <tr>
+                <th>&#35</th>
+                <th>English</th>
+                <th>Part of Speech</th>
+              </tr>
+      <!-- table rows populated via javascript -->
+            </table>
+          </div>
+          <!-- grammar column -->
+          <div class="col-sm-6">
+            <table class="table table-hover">
+              <h3>Grammar</h3>
+              <tr>
+                <th class="col-md-3">Concept</th>
+                <th class="col-md-4">Explanation</th>
+                <th class="col-md-5">Examples</th>
+              </tr>
+              <tr>
+                <td><em>to be</em></td>
+                <td>the <em>to be</em> verb can be used to talk about your job.</td>
+                <td>
+                  <ul>
+                    <li><em>I am a teacher.</em></li>
+                    <li><em>She is a web developer.</em></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><em>verbs in simple present</em></td>
+                <td>Check out the forms for conjugating verbs in the simple present <a href-"http://www.englishpage.com/verbpage/simplepresentforms.html">here.</a></td>
+                <td>
+                  <ul>
+                    <li><em>They build courses for students to take online.</em></li>
+                    <li><em>On a typical day, he shoots and edits video.</em></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><em>verbs in present progressive/continuous</em></td>
+                <td>Check out the forms for conjugating verbs in the present progressive/continuous <a href-"http://www.englishpage.com/verbpage/presentcontinuous.html">here</a>, and compare this form to the gerunds.</td>
+                <td>
+                  <ul>
+                    <li><em>I am working tonight.</em></li>
+                    <li><em>My brother is watching a movie right now.</em></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><em>gerund forms</em></td>
+                <td>Check out the gerund forms of verbs <a href-"http://www.englishpage.com/gerunds/part_1.htm">here</a>, and compare this form to the present progressive/continuous.</td>
+                <td>
+                  <ul>
+                    <li><em>Napping is my favorite thing to do in the afternoons.</em></li>
+                    <li><em>He is not good at building things.</em></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    <!-- End vocab/grammar tables -->
+
+<!-- Begin first video -->
+        <div class="row module-video-row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <video src="../videos/lydia.mp4" controls></video>
+          </div>
+          <div class="col-sm-6">
+            <p class="video-transcript">My name is Lydia. I'm an <span class="vocab-highlight">instructional designer</span> at Colorado State University Online. My job is to build online courses. I work with faculty to develop learning objectives, and then match a curriculum that we can assess at the end to make sure that students are actually learning what we want them to learn. I come in at every step of the process to develop learning materials. I spend a lot of my time shooting, editing and producing video, doing audio cleanup, writing code, and building e-learning games <span class="vocab-highlight">to make sure</span> that distance education is engaging and most of all effective.</p>
+
+        <!-- begin hide arrow and button -->
+            <div class="row hide-transcript">
+              <div class="col-sm-12 text-center">
+                <i class="fa fa-arrow-circle-o-up fa-2x text-center" aria-hidden="true"></i>
+                <p>Hide transcript</p>
+              </div>
+            </div>
+        <!-- end hide arrow and button -->
+
+        <!-- begin show arrow and button -->
+            <div class="row show-transcript">
+              <div class="col-sm-12 text-center">
+                <i class="fa fa-arrow-circle-o-down fa-2x text-center" aria-hidden="true"></i>
+                <p>Show transcript</p>
+              </div>
+            </div>
+        <!-- end show arrow and button -->
+
+          </div>
+        </div>
+        <hr>
+<!-- End first video -->
+<!-- Begin second video -->
+        <div class="row module-video-row" id="video-2">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <video src="../videos/hannah2.mp4" controls></video>
+          </div>
+          <div class="col-sm-6">
+            <p class="video-transcript">Hi. I teach writing at a university to American and international students. I really enjoy meeting new people every semester. Every day that I teach, I go into my office in the morning, <span class="vocab-highlight">pick</span> up all of the materials that I need, and go find my classrooms to teach a 50-minute class. In my classes, we do a lot of group activites and a lot of writing. At home, I grade students' writing and plan for my next class. Most of my time goes to grading and planning for 50-minute class sessions.</p>
+            <!-- begin hide arrow and button -->
+                <div class="row hide-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-up fa-2x text-center" aria-hidden="true"></i>
+                    <p>Hide transcript</p>
+                  </div>
+                </div>
+            <!-- end hide arrow and button -->
+
+            <!-- begin show arrow and button -->
+                <div class="row show-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-down fa-2x text-center" aria-hidden="true"></i>
+                    <p>Show transcript</p>
+                  </div>
+                </div>
+            <!-- end show arrow and button -->
+          </div>
+        </div>
+        <hr>
+<!-- End second video -->
+
+<!-- Begin third video -->
+        <div class="row module-video-row" id="video-3">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <video src="../videos/keith.mp4" controls></video>
+          </div>
+          <div class="col-sm-6">
+            <p class="video-transcript">Hi. I'm Keith. I'm a horse trainer and a ranch manager at Freshwwater Ranch. A typical day in the life of a...my duties are to train horses clean stalls take care of livestock and <span class="vocab-highlight">deal with</span> clients. My favorite part of the job is working with young horses like the one behind that just bit me.</p>
+            <!-- begin hide arrow and button -->
+                <div class="row hide-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-up fa-2x text-center" aria-hidden="true"></i>
+                    <p>Hide transcript</p>
+                  </div>
+                </div>
+            <!-- end hide arrow and button -->
+
+            <!-- begin show arrow and button -->
+                <div class="row show-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-down fa-2x text-center" aria-hidden="true"></i>
+                    <p>Show transcript</p>
+                  </div>
+                </div>
+            <!-- end show arrow and button -->
+          </div>
+        </div>
+        <hr>
+<!-- End third video -->
+
+<!-- Begin fourth video -->
+        <div class="row module-video-row" id="video-4">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <video src="../videos/jennie.mp4" controls></video>
+          </div>
+          <div class="col-sm-6">
+            <p class="video-transcript">Hello. My name is Jennie. I help my husband Keith take care of Freshwater Ranch, and I'm a <span class="vocab-highlight">full-time</span> mom. I <span class="vocab-highlight">wake up</span> in the mornings and go help feed, <span class="vocab-highlight">take care of</span> the horses, goats and chickens, and take care of Gracie all day. The favorite part of my day is taking care of our daughter.</p>
+            <!-- begin hide arrow and button -->
+                <div class="row hide-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-up fa-2x text-center" aria-hidden="true"></i>
+                    <p>Hide transcript</p>
+                  </div>
+                </div>
+            <!-- end hide arrow and button -->
+
+            <!-- begin show arrow and button -->
+                <div class="row show-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-down fa-2x text-center" aria-hidden="true"></i>
+                    <p>Show transcript</p>
+                  </div>
+                </div>
+            <!-- end show arrow and button -->
+          </div>
+        </div>
+        <hr>
+<!-- End fourth video -->
+
+<!-- Begin fifth video -->
+        <div class="row module-video-row" id="video-4">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <video src="../videos/dylan.mov" controls></video>
+          </div>
+          <div class="col-sm-6">
+            <p class="video-transcript">Hello. My name is Dylan. I am a dog. I love to go exploring. Right now I'm looking for squirrels. This is my paw. I like to ask for treats. I love to roll in the grass. Napping is my favorite part of my job. Let's all take a nap.</p>
+            <!-- begin hide arrow and button -->
+                <div class="row hide-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-up fa-2x text-center" aria-hidden="true"></i>
+                    <p>Hide transcript</p>
+                  </div>
+                </div>
+            <!-- end hide arrow and button -->
+
+            <!-- begin show arrow and button -->
+                <div class="row show-transcript">
+                  <div class="col-sm-12 text-center">
+                    <i class="fa fa-arrow-circle-o-down fa-2x text-center" aria-hidden="true"></i>
+                    <p>Show transcript</p>
+                  </div>
+                </div>
+            <!-- end show arrow and button -->
+          </div>
+        </div>
+        <hr>
+<!-- End fifth video -->
+        <div class="row">
+          <div class="col-sm-12 text-center" id="quiz-button">
+            <a href="../quiz.html"><button type="button" class="btn btn-warning">Take the Quiz <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button></a>
+          </div>
+        </div>
+
+        <footer>
+          <p id="first-line">&#169;english-selfies.com</p>
+          <p>Translations Powered by <em>Yandex Translate</em></p>
+        </footer>
+      </div>
+    </div>
+    <script src="../scripts/module-pages.js"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

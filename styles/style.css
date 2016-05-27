@@ -1,0 +1,281 @@
+/* GLOBAL NAVIGATION STYLES */
+#landing-page {
+  overflow: hidden;
+}
+#navigation-bar h1 {
+  margin-top: 10px;
+  padding: 0 0 10px 0;
+}
+#navigation-bar {
+  background-color: #555555;
+}
+#landing-page a, #navigation-bar a {
+  color: white;
+}
+#landing-page a:hover, #navigation-bar a:hover {
+  color: white;
+  text-decoration: none;
+}
+#divider-line {
+  font-size: 1.5em;
+}
+.pull-right {
+  margin-top: 30px;
+}
+/* GOOGLE FONT STYLES */
+.indie-font {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
+}
+.ubuntu-font {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 3px;
+}
+/* BUTTON STYLES */
+.btn-warning {
+  border-radius: 10px;
+  letter-spacing: 2px;
+  background: #60ABA4;
+  border-color: #568C89;
+}
+.btn-success:hover {
+  background: #9D9A90;
+  border-color: #596066;
+}
+.btn-warning:active {
+  border-radius: 10px;
+  letter-spacing: 2px;
+  background: #60ABA4;
+  border-color: #568C89;
+}
+#users-native-lang-choice {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: orange;
+  border-color: orange;
+
+}
+/* LANDING PAGE STYLES */
+#landing-main-content {
+  background-color: lightgray;
+}
+#landing-heading {
+  text-align: center;
+  margin: 6% 0 6% 0;
+
+}
+#proficiency-buttons {
+  margin-bottom: 8%;
+}
+#landing_img {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/landing.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.form-control {
+  width: 100%;
+  margin-bottom: 7%;
+}
+#choose-language {
+  margin: 0 0 3% 0;
+  font-size: 1.5em;
+}
+
+/* SECONDARY PAGE STYLES */
+h3 {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+.video-row a {
+  color: #000000;
+}
+.video-row a:hover {
+  color: #568C89;
+}
+.secondary-title {
+  margin: 3% 0 3% 0;
+}
+
+.video-row {
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.video {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 60%;
+  background-color: darkgray;
+  background-size: cover;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#jobs {
+  background-image: url('../images/jobs.jpeg');
+
+}
+#hobbies {
+  background-image: url('../images/hobbies.jpg');
+}
+#family {
+  background-image: url('../images/family.jpeg');
+}
+#face {
+    background-image: url('../images/face.jpeg');
+}
+#habits {
+    background-image: url('../images/habits.jpeg');
+}
+#objects {
+    background-image: url('../images/typewriter.jpg');
+}
+
+/* MODULE PAGE STYLES */
+#vocab-grammar-buttons {
+  margin-bottom: 4%;
+}
+table h3 {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 10px;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+#vocab-grammar-div {
+  height: 350px;
+  overflow: scroll;
+}
+.table ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+.module-video-row {
+  margin-top: 4%;
+}
+.module-video-row p {
+  font-size: 1.2em;
+  line-height: 200%;
+}
+video {
+  width: 100%;
+}
+.vocab-highlight {
+  background-color: #f6dcb6;
+  border: 1px solid #f6dcb6;
+  border-radius: 5px;
+}
+.vocab-highlight:hover {
+  background-color: orange;
+}
+.fa {
+  text-align: center;
+  color: #777777;
+}
+.hide-transcript p {
+  font-size: .9em;
+  color: #777777;
+}
+.show-transcript {
+  font-size: .9em;
+  color: #777777;
+  display: none;
+}
+#quiz-button button {
+  color: white;
+  font-size: 1.6em;
+  margin: 3% 0 4% 0;
+}
+#quiz-button button i {
+  color: white;
+  font-size: 1em;
+}
+
+
+
+/* FOOTER STYLES */
+footer {
+  background-color: #555555;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+  height: 75px;
+}
+#first-line {
+  padding-top: 10px;
+}
+
+/* QUIZ PAGE */
+#good-luck-text {
+  margin-top: 6%;
+}
+#begin-quiz, #next-question {
+  font-size: 1.5em;
+}
+#next-question {
+  margin-top: 2%;
+}
+#native-language-vocab {
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+#target-language-vocab {
+  margin-left: 20%;
+}
+.quiz-response-hover:hover {
+  background-color: #a3eae3;
+  border: 1px solid #a3eae3;
+  border-radius: 10px;
+}
+#what-to-study-row {
+  display: none;
+}
+#back-button-block {
+  margin-top: 1%;
+}
+.fa-arrow-circle-o-left {
+  float: left;
+  margin-top: 2px;
+}
+#back-button {
+  font-size: 1.5em;
+  color: #777777;
+  float: left;
+  margin-left: 1%;
+}
+
+@media only screen and (max-width: 520px) {
+    #landing-page {
+        overflow: auto;
+    }
+    #users-native-lang-choice {
+      width: 60%;
+      margin-left: 20%;
+    }
+    .level-button {
+      width: 60%;
+      margin-left: 20%;
+    }
+    #site-logo {
+      text-align: center;
+    }
+    #navigation-bar form {
+      margin: 0;
+    }
+    .video-transcript {
+      width: 80%;
+      margin-left: 10%;
+    }
+    .target-language-vocab {
+      text-align: center;
+    }
+    #target-language-vocab {
+      margin: 0;
+    }
+}
