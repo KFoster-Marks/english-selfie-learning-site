@@ -67,7 +67,6 @@ function checkForQuizCompletion() {
         header.style.marginTop = "0";
         quizItemBlock.style.display = "none";
         nextQuestionButton.style.display = "none";
-        //for loop through cumulativeScoreObject.needToStudy and display them for user
         console.log("you need to study: " + cumulativeScoreObject.needToStudy);
         whatToStudyRow.style.display = "block";
         whatToStudyRow.style.backgroundColor = "orange";
@@ -75,6 +74,8 @@ function checkForQuizCompletion() {
         //add begin quiz button back tp page
         beginQuizButton.style.display = "block";
         beginQuizButton.style.marginTop = '3%';
+        //remove quiz progress display
+        quizProgressBlock.style.display = "none";
         cumulativeScoreObject.total = 0;
         cumulativeScoreObject.correct = 0;
         cumulativeScoreObject.incorrect = 0;
@@ -161,8 +162,9 @@ function setNewQuizItem() {
     header.innerHTML = "Choose the correct translation.";
     whatToStudyRow.style.display = "none";
     beginQuizButton.style.display = "none";
-    quizItemBlock.style.display = "";
+    quizItemBlock.style.display = "block";
     nextQuestionButton.style.display = "";
+    quizProgressBlock.style.display = "block";
     quizProgressDisplay.innerHTML = (cumulativeScoreObject.total + 1);
 }
 
@@ -193,6 +195,7 @@ function checkForCorrectAnswer(event) {
             cumulativeScoreObject.incorrect += 1;
             cumulativeScoreObject.needToStudy.push(event.target.innerHTML);
             cumulativeScoreObject.total += 1;
+            quizProgressDisplay.innerHTML = (cumulativeScoreObject.total + 1);
             checkForQuizCompletion();
             //store incorrect answers randomWord in object
             console.log(cumulativeScoreObject.needToStudy);
