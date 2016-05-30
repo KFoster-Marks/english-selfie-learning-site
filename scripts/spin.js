@@ -26,14 +26,20 @@ var opts = {
 , position: 'absolute' // Element positioning
 }
 
+
+
+
 var target = document.body;
 var spinner = new Spinner(opts).spin(target);
-var theVideo = document.getElementById('the-video');
-console.log(theVideo.readyState);
+var videoOne = document.getElementById('video-one');
+var videoTwo = document.getElementById('video-two');
+videoOne.addEventListener('loadeddata', stopSpinner);
+videoTwo.addEventListener('loadeddata', stopSpinner);
 
-theVideo.addEventListener('loadeddata', function() {
-  if(theVideo.readyState == 4) {
+
+function stopSpinner() {
+  if(videoOne.readyState == 4 && videoTwo.readyState == 4) {
     console.log("we've reached 4");
     spinner.stop();
   }
-});
+};
