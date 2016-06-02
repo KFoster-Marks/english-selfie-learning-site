@@ -1,3 +1,8 @@
+// rws: for easier readability, group all yout function in one place, and your procedural logic in another
+// this help when you are reading a program, you can follow the logic with out having to jump around
+// functions.
+
+
 'use strict';
 //This object holds the vocabulary for this module
 var jobsObject = {
@@ -19,6 +24,7 @@ var cumulativeScoreObject = {
 //WORKING!!! global variables and event listeners
 var beginQuizButton = document.getElementById('begin-quiz');
 beginQuizButton.addEventListener('click', setNewQuizItem);
+//rws: good use of pseudo selectors
 var header = document.querySelector('#good-luck-text > h1');
 header.style.fontFamily = "Ubuntu";
 header.style.fontSize = '3.5em';
@@ -29,6 +35,8 @@ var targetLanguageOptionArray = document.getElementsByClassName('quiz-response-h
 //WORKING!!! creates nextQuestionButton and sets event listeners
 var nextQuestionButton = document.querySelector('#next-question');
 nextQuestionButton.style.display = "none";
+//rws: another way of adding multiple functions to an event listenter is to create function that then returns
+//all the functions you need.
 nextQuestionButton.addEventListener('click', set3RandomEngWords);
 nextQuestionButton.addEventListener('click', setNativeWordAndTranslate);
 nextQuestionButton.addEventListener('click', setNewQuizItem);
@@ -98,6 +106,7 @@ function chooseRandomVocabWord(arr) {
     //console.log("This word is random: " + randomWord);
     return randomWord;
 }
+//rws: you might not need to call this here, you are loosing your returned value;
 chooseRandomVocabWord();
 
 
