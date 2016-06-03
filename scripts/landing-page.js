@@ -11,6 +11,9 @@ function supports_html5_storage() {
     return false;
   }
 }
+
+// rws: supports_html5_storage() returns true/false, you are not using that information
+// when you invoke it. If you are not using that information, dont return it.
 supports_html5_storage();
 // END LOCAL STORAGE CHECK
 
@@ -22,6 +25,8 @@ supports_html5_storage();
 var userNativeLang = ""; //set to store userLang code on change event
 var userNativeLangFull = ""; //set to store full word
 var langOptions = document.getElementById('language-choice-dropdown');
+
+
 langOptions.addEventListener("change", storeUserLanguage);
 
 function storeUserLanguage() {

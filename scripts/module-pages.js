@@ -5,6 +5,12 @@
 
 //AJAX REQUEST
 var translatedWord = ""; //global variable
+
+//rws: you only need to include the ajax function once,
+// when a script is loaded, all the global functions and variables
+// are available to all other scripts.
+// You have to be carefull, you have to load the script with the functions
+// before you are able to use them.
 function ajax(method, url, handler) {
   var req = new XMLHttpRequest();
   req.onreadystatechange = function() {
