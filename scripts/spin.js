@@ -26,16 +26,14 @@ var opts = {
 , position: 'absolute' // Element positioning
 }
 
-
-
-
 var target = document.body;
 var spinner = new Spinner(opts).spin(target);
 var videoOne = document.getElementById('video-one');
 var videoTwo = document.getElementById('video-two');
+
+//adding eventListener to only first two videos so that users can begin interacting with the page even if not fully loaded yet
 videoOne.addEventListener('loadeddata', stopSpinner);
 videoTwo.addEventListener('loadeddata', stopSpinner);
-
 
 function stopSpinner() {
   if(videoOne.readyState == 4 && videoTwo.readyState == 4) {

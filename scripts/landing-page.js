@@ -4,17 +4,13 @@
 // FOLLOWING CHECKS IF USERS BROWSER SUPPORTS LOCALSTORAGE OBJECT
 function supports_html5_storage() {
   try {
-    console.log("Local storage exists.");
     return 'localStorage' in window && window.localStorage !== null;
   } catch (e) {
     window.alert("Sorry, but your browser won't allow us to save your native language for use on this site.");
-    return false;
   }
 }
 supports_html5_storage();
 // END LOCAL STORAGE CHECK
-
-
 
 
 //WORKING!!! GRAB USER NATIVE LANGUAGE

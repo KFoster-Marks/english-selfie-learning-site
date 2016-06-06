@@ -30,10 +30,10 @@
             </div>
             <div class="col-sm-6 col-xs-12">
                 <form class="pull-right">
-                    <button id="users-native-lang-choice" type='button' class="btn btn-warning">Lang: </button>
-                    <button type="button" class="btn btn-warning level-button"><a href="beginner.html">Beginner</a></button>
-                    <button type="button" class="btn btn-warning level-button"><a href="intermediate.html">Intermediate</a></button>
-                    <button type="button" class="btn btn-warning level-button"><a href="advanced.html">Advanced</a></button>
+                    <button id="users-native-lang-choice" type='button' class="btn btn-warning"> </button>
+                    <button type="button" class="btn btn-warning level-button"><a href="proficiency-levels/beginner.html">Beginner</a></button>
+                    <button type="button" class="btn btn-warning level-button"><a href="proficiency-levels/intermediate.html">Intermediate</a></button>
+                    <button type="button" class="btn btn-warning level-button"><a href="proficiency-levels/advanced.html">Advanced</a></button>
                     <form>
             </div>
         </div>
@@ -42,10 +42,10 @@
         <!-- Back to module button -->
         <div class="row" id="back-button-block">
             <div class="col-sm-5">
-                <a href="modules/jobs.html">
+
                     <i class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
                     <p id="back-button">Back to Module</p>
-                </a>
+
             </div>
         </div>
         <!-- End back to module button -->
@@ -56,6 +56,21 @@
                 <div class="col-sm-12 text-center" id="good-luck-text">
                     <h1 class="secondary-title"><span class="ubuntu-font">Good luck!</span></h1>
                 </div>
+            </div>
+
+
+            <div class="row" id="quiz-length-div">
+              <div class="col-sm-5"></div>
+              <div class="col-sm-2">
+                <select id="quiz-length-options" class="form-control">
+                  <option value="choose">Choose your quiz length!</option>
+                  <option class="quiz-length-choice" value="3">3</option>
+                  <option class="quiz-length-choice" value="5">5</option>
+                  <option class="quiz-length-choice" value="10">10</option>
+                  <option class="quiz-length-choice" value="15">15</option>
+                  <option class="quiz-length-choice" value="20">20</option>
+                </select>
+              </div>
             </div>
 
             <!-- tells user what they should study  -->
@@ -104,7 +119,7 @@
         </div>
     </div>
     <script src="scripts/quizzes/jobs.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
