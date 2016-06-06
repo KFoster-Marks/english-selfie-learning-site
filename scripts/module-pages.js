@@ -1,10 +1,19 @@
 'use strict';
 
-//USER'S NATIVE LANGUAGE WAS STORED IN localStorage
-//console.log(localStorage.nativeLanguage);
 
+<<<<<<< HEAD
+// START HERE //
+//REWRITE VARIABLE ASSIGNMENT BELOW SO THAT IT KNOWS WHICH VOCAB OBJECT TO GRAB
+
+=======
 //AJAX REQUEST
 var translatedWord = ""; //global variable
+
+//rws: you only need to include the ajax function once,
+// when a script is loaded, all the global functions and variables
+// are available to all other scripts.
+// You have to be carefull, you have to load the script with the functions
+// before you are able to use them.
 function ajax(method, url, handler) {
   var req = new XMLHttpRequest();
   req.onreadystatechange = function() {
@@ -19,21 +28,16 @@ function ajax(method, url, handler) {
   req.open(method, url);
   req.send();
 }
+>>>>>>> b2015f99f873623c0d34199d239ac3c2ba81a0e0
 
-//WORKING: POPULATE HTML VOCAB TABLE
+//WORKING: POPULATES HTML VOCAB TABLE
 var vocabTable = document.querySelector('#vocab-table');
-//console.log(vocabTable);
-//loop through vocabulary object for this module (vocabulary.beginner.jobs)
 var jobsVocabObj = vocabulary.beginner.jobs;
-//console.log(jobsVocabObj);
 // WORKING loop through part of speech keys in object
 var count = 1;
 for (var key in jobsVocabObj) {
-  //console.log(key);
-  // WORKING loop through each i in array
   for (var i = 0; i < jobsVocabObj[key].length; i++) {
     var vocabWord = jobsVocabObj[key][i];
-    //console.log(vocabWord);
     // WORKING for each i, create row
     var newTableRow = document.createElement('tr');
     // WORKING create & append td with number starting from 1,
@@ -66,47 +70,37 @@ function showVocabAndGrammar() {
   if (table.style.display !== "none") {
     table.style.display = "none";
   } else {
-    table.style.display = "";
+    table.style.display = "block";
     vocabGrammarButton.innerHTML = "Hide Vocabulary & Grammar";
   }
 }
 
 
 //WORKING: VOCAB WORDS HIGHLIGHTED
-  //create variable (array-like-object) that holds all p elements
+  //Following creates variable (array-like-object) that holds all p elements
   var pElements = document.getElementsByClassName("video-transcript");
-  // //loop through these p elements
+  //Loops through p elements
   for (var i = 0; i < pElements.length; i++) {
-    //convert to array of words
+    //Converts paragraph to an array of words
     var paragraph = pElements[i].innerHTML;
     var paragraphSplitArray = paragraph.split(' ');
-    //console.log(paragraphSplitArray);
-    //loop through these words
+    //Loops through these words
     for (var j = 0; j < paragraphSplitArray.length; j++) {
-      //console.log(paragraphSplitArray[j]);
-      //replace all periods and commas with nothing
+      //Removes all periods and commas
       var arrayWord = paragraphSplitArray[j];
       var arrayWordClean = arrayWord.replace(/[,.]/g, "");
-      //console.log(arrayWordClean);
-      //loop through vocabObj keys
+      //Loop through vocabObj keys
       for (var key in jobsVocabObj) {
-        //console.log(key);
-        //loop through vocabObj[key][i]
+        //Loops through vocabObj[key][i]
         for (var v = 0; v < jobsVocabObj[key].length; v++) {
-          //console.log(jobsVocabObj[key][v]);
-          //if vocabObj[key][v] === p element array[i], add class of vocab-highlight
+          //Adds class of vocab-highlight to matches
           if ((jobsVocabObj[key][v]).toLowerCase() === (arrayWordClean).toLowerCase()) {
-            //console.log("We have a match!");
-            //add span class to (arrayWordClean)
             arrayWordClean = "<span class='vocab-highlight'>" + arrayWordClean + "</span>";
-            //console.log(arrayWordClean);
-            //Insert elements with span class into old array
+            //Inserts elements with span class into old array
             paragraphSplitArray[j] = arrayWordClean;
-            //console.log(paragraphSplitArray);
-            //turn old array into string again
+            //Converts old array to string
             var highlightedParagraph = paragraphSplitArray.join(" ");
             pElements[i].innerHTML = highlightedParagraph;
-            //console.log(highlightedParagraph);
           }
         }
       }
@@ -114,7 +108,7 @@ function showVocabAndGrammar() {
   }
 
 
-//FUCKING YES!!!! SHOW/HIDE TRANSCRIPT
+//WORKING: SHOW/HIDE TRANSCRIPT
 var hideTranscriptButtons = document.getElementsByClassName('hide-transcript');
 var showTranscriptButtons = document.getElementsByClassName('show-transcript');
 for (var i = 0; i < hideTranscriptButtons.length; i++) {
@@ -144,11 +138,10 @@ function hideShowTranscript() {
 }
 
 
-//WORKING!!! --> SHOW VOCAB TRANSLATION ON HOVER
-//grab all elements with class of vocab-highlight
+//WORKING: SHOW VOCAB TRANSLATION ON HOVER
+//Grabs all elements with class of vocab-highlight
 var vocabHighlightClassElements = document.getElementsByClassName('vocab-highlight');
-//console.log(vocabHighlightClassElements);
-//add the two event listeners
+//Adds mouseenter & mouseout event listeners
 for (var i = 0; i < vocabHighlightClassElements.length; i++) {
   vocabHighlightClassElements[i].addEventListener('mouseenter', hoverTranslateOn);
   vocabHighlightClassElements[i].addEventListener('mouseout', hoverTranslateOff);
@@ -160,11 +153,8 @@ function hoverTranslateOn(event) {
   this.style.borderColor = 'lightgray';
   //urlString modifies the request string
   var urlString = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160520T131217Z.ce9eb7a558c632c6.b545c9193722b47e3faf7a417fe30acef59ab341&text=" + englishWord + "&lang=en-" + localStorage.nativeLanguage;
-  //makes the request
-  //below, don't define variable with returned value...causing 'undefined' to show while function executes
   ajax('GET', urlString, function(err, data) {
     if(!err) {
-      console.log(data.text[0]); //calling ajax returns translated text
       event.target.innerHTML = data.text[0];
     }
   });

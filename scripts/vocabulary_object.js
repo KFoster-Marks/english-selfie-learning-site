@@ -1,6 +1,5 @@
 'use strict';
 
-
 var vocabulary = {
   beginner: {
     jobs: {
@@ -12,11 +11,11 @@ var vocabulary = {
     },
 
     hobbies: {
-      nouns: [ ],
-      verbs: [ ],
-      adjectives: [],
-      adverbs: [],
-      phrases: []
+      nouns: ['morning', 'golf', 'wife', 'laundry', 'chores'],
+      verbs: ['run', 'hike', 'cleaning', 'sweeping'],
+      adjectives: ['favorite', 'awesome', 'boring'],
+      adverbs: ['early', 'after'],
+      phrases: ['wake up', 'spend time with', 'to get bored']
     },
 
     family: {

@@ -28,12 +28,16 @@ var opts = {
 
 var target = document.body;
 var spinner = new Spinner(opts).spin(target);
-var theVideo = document.getElementById('the-video');
-console.log(theVideo.readyState);
+var videoOne = document.getElementById('video-one');
+var videoTwo = document.getElementById('video-two');
 
-theVideo.addEventListener('loadeddata', function() {
-  if(theVideo.readyState == 4) {
+//adding eventListener to only first two videos so that users can begin interacting with the page even if not fully loaded yet
+videoOne.addEventListener('loadeddata', stopSpinner);
+videoTwo.addEventListener('loadeddata', stopSpinner);
+
+function stopSpinner() {
+  if(videoOne.readyState == 4 && videoTwo.readyState == 4) {
     console.log("we've reached 4");
     spinner.stop();
   }
-});
+};

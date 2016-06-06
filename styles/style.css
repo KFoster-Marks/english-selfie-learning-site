@@ -114,23 +114,23 @@ h3 {
   border-radius: 10px;
 }
 #jobs {
-  background-image: url('../images/jobs.jpeg');
+  background-image: url('../images/beginner/jobs.jpeg');
 
 }
 #hobbies {
-  background-image: url('../images/hobbies.jpg');
+  background-image: url('../images/beginner/hobbies.jpg');
 }
 #family {
-  background-image: url('../images/family.jpeg');
+  background-image: url('../images/beginner/family.jpeg');
 }
 #face {
-    background-image: url('../images/face.jpeg');
+    background-image: url('../images/beginner/face.jpeg');
 }
 #habits {
-    background-image: url('../images/habits.jpeg');
+    background-image: url('../images/beginner/habits.jpeg');
 }
 #objects {
-    background-image: url('../images/typewriter.jpg');
+    background-image: url('../images/beginner/typewriter.jpg');
 }
 
 /* MODULE PAGE STYLES */
