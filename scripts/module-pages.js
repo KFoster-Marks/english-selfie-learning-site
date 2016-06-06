@@ -1,9 +1,34 @@
 'use strict';
 
 
+<<<<<<< HEAD
 // START HERE //
 //REWRITE VARIABLE ASSIGNMENT BELOW SO THAT IT KNOWS WHICH VOCAB OBJECT TO GRAB
 
+=======
+//AJAX REQUEST
+var translatedWord = ""; //global variable
+
+//rws: you only need to include the ajax function once,
+// when a script is loaded, all the global functions and variables
+// are available to all other scripts.
+// You have to be carefull, you have to load the script with the functions
+// before you are able to use them.
+function ajax(method, url, handler) {
+  var req = new XMLHttpRequest();
+  req.onreadystatechange = function() {
+    if (req.readyState === 4) {
+      if(req.status === 200) {
+        handler(null, JSON.parse(req.responseText));
+      } else {
+        handler(req.status, null);
+      }
+    }
+  };
+  req.open(method, url);
+  req.send();
+}
+>>>>>>> b2015f99f873623c0d34199d239ac3c2ba81a0e0
 
 //WORKING: POPULATES HTML VOCAB TABLE
 var vocabTable = document.querySelector('#vocab-table');
