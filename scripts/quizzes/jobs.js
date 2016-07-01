@@ -1,8 +1,3 @@
-// rws: for easier readability, group all yout function in one place, and your procedural logic in another
-// this help when you are reading a program, you can follow the logic with out having to jump around
-// functions.
-
-
 'use strict';
 
 var cumulativeScoreObject = {
@@ -37,7 +32,6 @@ function goBack() {
 
 var beginQuizButton = document.getElementById('begin-quiz');
 beginQuizButton.addEventListener('click', setNewQuizItem);
-//rws: good use of pseudo selectors
 var header = document.querySelector('#good-luck-text > h1');
 header.style.fontFamily = "Ubuntu";
 header.style.fontSize = '3.5em';
@@ -48,8 +42,6 @@ var targetLanguageOptionArray = document.getElementsByClassName('quiz-response-h
 //Creates nextQuestionButton and sets event listeners
 var nextQuestionButton = document.querySelector('#next-question');
 nextQuestionButton.style.display = "none";
-//rws: another way of adding multiple functions to an event listenter is to create function that then returns
-//all the functions you need.
 nextQuestionButton.addEventListener('click', set3RandomEngWords);
 nextQuestionButton.addEventListener('click', setNativeWordAndTranslate);
 nextQuestionButton.addEventListener('click', setNewQuizItem);
@@ -92,10 +84,9 @@ for (var i = 0; i < targetLanguageOptionArray.length; i++) {
 }
 
 
-
-
 ////// START HERE ///////
 //RE-WRITE FUNCTION BELOW SO THAT IT RECOGNIZES WHAT SHOULD BE PLACED IN VOCAB.BEGINNER.JOBS
+// NOTE: REFACTOR THE ENTIRE SITE WITH EXPRESS...USE TEMPLATES AND VIEWS TO ACHIEVE THIS
 
 //WORKING!!! chooses a random word for the new quiz item
 function chooseRandomVocabWord() {
@@ -105,17 +96,7 @@ function chooseRandomVocabWord() {
     //console.log("This word is random: " + randomWord);
     return randomWord;
 }
-//rws: you might not need to call this here, you are loosing your returned value;
 chooseRandomVocabWord();
-
-
-
-
-
-
-
-
-
 
 //WORKING: following randomly sets the three english words; also returns an array of these words to be used for native-language translation word
 var threeEnglishVocabOptions = []; //this stores three english words
@@ -137,7 +118,6 @@ function set3RandomEngWords() {
     }
 }
 set3RandomEngWords();
-
 
 //WORKING!!! picks one word from 3-word array to use as native-language match
 function setNativeWordAndTranslate() {
@@ -206,8 +186,6 @@ function checkForCorrectAnswer(event) {
     });
 }
 
-
-// no longer working -- start here
 
 //If # answered equals quizLength, completion message, score & study suggestion appear
 function checkForQuizCompletion() {
